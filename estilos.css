@@ -1,0 +1,54 @@
+/* Uso de variables en CSS */
+
+:root {
+    --color_primario: #806868;
+    --size: 200px;
+}
+
+img {
+    width: var(--size);
+    height: var(--size);
+    align-items: center;
+}
+
+h1 {
+    color: var(--color_primario);
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    background-color: rgba(192, 211, 19, 0.532);
+    border-radius: 10px;
+}
+
+#pokemon-logo {
+    width: auto !important;
+    height: auto !important;
+}
+
+#cabecera {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#container-grid {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, 20%);
+    justify-content: center;
+}
+
+#item-grid {
+    background-color: rgb(250, 238, 159);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#titulo {
+    font-size: 20px;
+    background-color: rgb(255, 234, 98);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
